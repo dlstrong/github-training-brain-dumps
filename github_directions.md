@@ -137,11 +137,7 @@ After installing, go ahead and open it.  There are some major differences betwee
 
 ### Connect you account
 
-Upon first opening it, Windows versions will go ahead and prompt you to log in.  
-
-Unsure if macs do.
-
-TODO:  this needs to be tested on a fresh install,
+Upon first opening it, Windows versions will go ahead and prompt you to log in.  (Do Macs? Not sure.)
 
 Directions for logging in from the regular GUI:
 
@@ -189,8 +185,23 @@ Some of the language Git and GitHub use can be easy to mix up. You'll see "fetch
 * Push: If you've changed things on your computer that haven't been sent to GitHub, you'll want to "push" them from your computer to the remote system.
 * Commit: A commit is the equivalent of a folder full of stuff that you use for "pushing" through the mail (or "pulling" from the remote server). You can have edits to several files in the same commit, so if you made a mistake you can remove the whole batch at once.
 
-## Make a Jupyter Notebook in your directory
+## Make changes on your local computer to send to GitHub
 
+Next we're going to make some files locally and put them from your computer into GitHub.
+
+For an example of how to collaborate with other people, we're going to create a new independent file to be shared with other people. 
+
+* In order to make it easy to see what's going where, give the file your name: *your-name.txt* (in my case, dena-strong.txt).
+
+Put some text in your file and save it in the local directory where your GitHub Desktop is watching. The changes in your file should show up in the Changes list in a few seconds. You'll see the file name, a green + sign by the file name, and a green preview of the text you entered.
+
+Now that GitHub Desktop knows you've made a change, you can push it up to the server:
+
+* Under the Repository menu, choose Push.
+* GitHub Desktop will process for a while and then (hopefully) report success.
+* Check the website to see if it's there - you might need to refresh the web page.
+
+-----
 We're now going to launch a Jupyter Notebook instance and save a notebook in this directory.  
 
 This folder is another directory on your computer, so if you're already comfortable with changing directories in your command line, you can do so.  However, we can also use another shortcut of the application.
@@ -203,7 +214,6 @@ TODO: does this work on windows? some screen shots I see show Open in Git Shell,
 
 Once the Jupyter host has started up, launch a Python 3 notebook as normal.  Name this file (by clicking on the "Untitled" at the top) "demo".
 
-Pop back into your GitHub desktop and you should see a bunch of green code in the code window, and some new files.  You can tell that these are new files because there is a big green + sign next to them.
 
 Take a moment to look at the file preview in comparison to how the rendered Jupyter Notebook looks like.  Remember that, like Markdown, Jupyter Notebooks are plain text JSON files that tell the sevice how to render them.  So when you look at the raw contents, it can be very hard to tell what's going on.  Markdown is a bit more readable (and is why most of us write directly inside of Markdown) but Jupyter Notebooks aren't disigned to have pretty 'human readable' code inside.
 
