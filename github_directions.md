@@ -2,8 +2,6 @@
 
 ## What is GitHub?
 
-Those of you choosing to do a programming project for your final will need to use GitHub to store and track your code.  This is a required and graded element of your project.
-
 GitHub is a website that allows people to host programming projects online, with extra features to support users with collaboration and project organization.  There are a huge number of features and tools you can use in GitHub, but everyone needs to start with the same basic skills:
 
 * Make a repository
@@ -14,20 +12,21 @@ You may be thinking that GitHub is something like a cloud storage service.  That
 
 ## What is version control?
 
-You a likely used to editing files in programs such as Word.  You add and change content in your file, saving as you go.  Every time you save you are writing over your previous file.  You can use the Undo function to back away from undesired changes.  This works pretty well most of the time.  However, having a queue of your 10 most recent changes may not be sufficient.  When it comes to writing code, there are very specialized needs that go well beyond the normal undo functions.  This isn't meant to be a lesson on version control, so we'll gloss over a lot of this.
+You are likely used to editing files in programs such as Word.  You add and change content in your file, saving as you go.  Every time you save you are writing over your previous file.  You can use the Undo function to back away from undesired changes.  This works pretty well most of the time.  However, having a queue of your 10 most recent changes may not be sufficient.  When it comes to writing code, there are very specialized needs that go well beyond the normal undo functions.  In addition, GitHub lets you identify synchronized changes acros several files at the same time; Word's versions are tracked independently of each other. However, this isn't meant to be a lesson on version control, so we'll gloss over a lot of this.
 
 There isn't a one size fits all way of using version control, so don't look at these tools as dictating your workflow.  The goal is to fit them into your natual workflow, and you'll find youself using more features as the need arises and you become more comfortable.
 
-At a mimimum, version control for programming means that you can:
+At a mimimum, GitHub-style version control for programming (or for text files) means that you can:
 
-* create checkpoints for your code, representing milestones such as a completed feature or the end of you work day.
-* view the differences between these checkpoints
-* roll back to a previous version of a file
-* restore a deleted file
+* Create checkpoints for your code, representing milestones such as a completed feature or the end of you work day.
+* View the differences between these checkpoints
+* Work on different pieces or different ideas at the same time using branches
+* Roll back to a previous version of a file
+* Restore a deleted file
 
 GitHub uses the git version control system and has added specialized tools on top of it.  
 
-Here's the example repository that you'll be creating as we go through this lesson: https://github.com/elliewix/jupyter-rr-demo-repo.  Take some time to look through the commits and files.
+Here's the example repository that you'll be creating as we go through this lesson: https://github.com/dlstrong/swc-forklesson.  Take some time to look through the commits and files. You'll see that several different people have contributed to this one, and you can too. I'll show you how in a few minutes.
 
 ## Getting started with GitHub
 
@@ -55,8 +54,8 @@ Step through this process together as a class.
 2. On the upper right hand corner of the page you'll see a + (plus) icon.  Click that + and select "New repository"
 3. This will take you to a form where you'll add some information about your repository.
 4. You'll need to add the following things:
-	1. Repository name: your repository name should be something short but descriptive. You might want to name yours `rr-workshop-test-repo`.  Do not include any spaces in your repository name.
-	2. Description:  a sentence or two about what your repository will contain.  You might say "My test repository for the Reproducible Research workshop."
+	1. Repository name: your repository name should be something short but descriptive. You might want to name yours something like `datacarpentry-workshop-test`.  Do not include any spaces in your repository name.
+	2. Description:  a sentence or two about what your repository will contain.  You might say "My test repository for the Data Carpentry workshop."
 	3. Decide if you want to make your repository public or private.  You should be able to leave it as public for this workshop, but you can choose Private to make it viewable only to you and others that you invite.  Private repositories are part of a paid account, but are free (at the time of writing) with the student developer pack.
 	4. Add a check next to "Initialize this repository with a README"
 5. Click "Create repository" at the bottom of the page.
@@ -79,8 +78,8 @@ Back in the file section, click on the `README.md` link.  This should take you t
 The screen will change to show the raw text behind the page (remember that we were seeing the rendered version), but you can also edit it!  Your text will look something like:
 
 ```
-# jupyter-rr-demo-repo
-Demo repo for writing github directions
+# Your repository name here
+Some description here
 ```
 
 The name of your repository is what will appear after the `#` and the description text will appear just below it.
@@ -88,10 +87,10 @@ The name of your repository is what will appear after the `#` and the descriptio
 Let's add some additional text to the end.
 
 ```
-# jupyter-rr-demo-repo
-Demo repo for writing github directions
+# swc-forklesson
+This is a repository for Git lesson students to fork and submit pull requests to.
 
-I will be adding more to this repository as we learn about more features.
+We'll take a look at the differences between submitting your own separate files as pull requests and collectively editing the contributors.txt file.
 ```
 
 Once you're happy with your edits, scroll to the bottom of this page to see the Commit changes section. You can think of this like saving our changes to the file, but remember that in GitHub everything you do will have a bit of metadata lagniappe (a bit extra) along with it.  So we aren't just saving our file here, we're saving it along with a message about what we did.
@@ -138,7 +137,7 @@ After installing, go ahead and open it.  There are some major differences betwee
 
 ### Connect you account
 
-Upon first opening it, Windows versions will go ahead and prompt you to log it.  
+Upon first opening it, Windows versions will go ahead and prompt you to log in.  
 
 Unsure if macs do.
 
@@ -146,7 +145,7 @@ TODO:  this needs to be tested on a fresh install,
 
 Directions for logging in from the regular GUI:
 
-* Windows: click the gear on the upper right, Select Options.  Click on "+ Add an account"
+* Windows: Under File, select Options.  
 * Mac:  in the upper menu items, click on GitHub Desktop and select Preferences.  Click on the accounts tab if it isn't already selected.
 * Choose the sign in option for to the GitHub.com option.
 * Log in with your user name and password
