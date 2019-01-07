@@ -181,6 +181,14 @@ You can always use normal file navigation to find the folder that was just made,
 
 This will take you directly to your local folder for this repository.
 
+## Fetch vs pull vs push vs commit
+Some of the language Git and GitHub use can be easy to mix up. You'll see "fetch" and "pull" both mentioned in the desktop interface, and they sound like they mean something pretty similar! Here's what's actually going on with those words, though.
+
+* Fetch: The system is checking what you have and what's in the remote location -- "fetching information." However, it's not actually changing any files yet.
+* Pull: If the fetch indicates that there are things changed on the remote server that you don't have locally, you'll want to "pull" them to your local machine to work with the latest information.
+* Push: If you've changed things on your computer that haven't been sent to GitHub, you'll want to "push" them from your computer to the remote system.
+* Commit: A commit is the equivalent of a folder full of stuff that you use for "pushing" through the mail (or "pulling" from the remote server). You can have edits to several files in the same commit, so if you made a mistake you can remove the whole batch at once.
+
 ## Make a Jupyter Notebook in your directory
 
 We're now going to launch a Jupyter Notebook instance and save a notebook in this directory.  
