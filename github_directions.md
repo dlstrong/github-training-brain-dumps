@@ -195,95 +195,29 @@ For an example of how to collaborate with other people, we're going to create a 
 
 Put some text in your file and save it in the local directory where your GitHub Desktop is watching. The changes in your file should show up in the Changes list in a few seconds. You'll see the file name, a green + sign by the file name, and a green preview of the text you entered.
 
-Now that GitHub Desktop knows you've made a change, you can push it up to the server:
+Now that GitHub Desktop knows you've made a change, you can push it up to the server. However, if you do this:
 
 * Under the Repository menu, choose Push.
 * GitHub Desktop will process for a while and then (hopefully) report success.
-* Check the website to see if it's there - you might need to refresh the web page.
+* Check the website to see if it's there... 
+* Nope, it's not there.
 
------
-We're now going to launch a Jupyter Notebook instance and save a notebook in this directory.  
+Remember commits? You have to tell GitHub Desktop that you want to make an envelope (a commit) for sending. Let's make another change in order to get a look at the bundling effect.
 
-This folder is another directory on your computer, so if you're already comfortable with changing directories in your command line, you can do so.  However, we can also use another shortcut of the application.
+* Make an edit to README.md using your favorite text editor. Save the change.
+* When it shows up in GitHub Desktop, it'll have a yellow icon (change) rather than green (new) beside it.
+* You can include or exclude changes from your commit with the checkmark.
+* In the left column, there's a text editing area at the bottom. Put a comment like "Adding my .txt file" in there.
+* Click the blue Commit to Master button.
 
-Navigate back to the Repositories menu where we just were (Repositories at the top or the gear icon at the left).  This time, select Open in Finder for Macs or Open in Git Shell for windows.
+Check the website now... It's still not there. That's intentional. Making a commit collection is different than pushing to the remote server (or pulling from it).
 
-This will open up a shell prompt already inside this directory.  Type in `jupyter notebook` to launch the service in that directiory.  (NOTE: this is presuming you have a standard installation.  You should follow your normal start routine here if you have something that differs.  
-
-TODO: does this work on windows? some screen shots I see show Open in Git Shell, so does jupyter notebook work here?
-
-Once the Jupyter host has started up, launch a Python 3 notebook as normal.  Name this file (by clicking on the "Untitled" at the top) "demo".
-
-
-Take a moment to look at the file preview in comparison to how the rendered Jupyter Notebook looks like.  Remember that, like Markdown, Jupyter Notebooks are plain text JSON files that tell the sevice how to render them.  So when you look at the raw contents, it can be very hard to tell what's going on.  Markdown is a bit more readable (and is why most of us write directly inside of Markdown) but Jupyter Notebooks aren't disigned to have pretty 'human readable' code inside.
-
-### Commit the empty file
-
-Let's commit this empty version of the file to our local repository.  Our changes are being saved to our `ipynb` files as we edit them, but this will check in this change to our repository information.  
-
-Go into GitHub Desktop and in the Changes panel you'll see two text boxes like you saw in the website version.  The first short one is your required commit message and the longer second one is the optional description area.  Add a commit message like "Adding empty jupyter notebook" and click "commit to master".
-
-You can now click back into the History tab and see your commit there.
-
-### Commit changes to that file
-
-We're now going to add some content and commit that in.
-
-Activity:
-
-Take 5 minutes and write some silly Python code in your Jupyter Notebook.  Add some Markdown cells explaining what that silly code does.
-
-Example:
-
-(markdown cell)  This makes the worst traffic light results.
-
-```python
-import random
-```
-
-
-```python
-colors = ['red', 'green', 'yellow']
-
-def traffic_light():
-    return random.choice(colors)
-
-for i in range(10):
-    print("The light is", traffic_light())
-```
-
-    The light is red
-    The light is yellow
-    The light is red
-    The light is yellow
-    The light is red
-    The light is green
-    The light is green
-    The light is red
-    The light is green
-    The light is yellow
-
-Now go back to GitHub desktop.  Click back into the Changes tab if you need.  Once again you'll see your demo.ipynb is in there, but instead of a greed + you can see an orange/yellow dot icon.  This indicates that you have a file change.  Click on that file name to see the changes you made.  Again, this raw code wasn't really meant for human eyes, but you should roughly see what you added in there.
-
-Add another commit message, "adding demo code", and commit to master.
-
-Now that we have a few commits stacked up, we can think about pushing our changes back to github.  Remember that these local commits are purely local to our machine, GitHub won't know about them unless we tell it about them.
-
-On Macs, you should see a large button that says "Push origin" (and some other metadata".  On Windows, you will only see a "Sync" button.
-
-In this case, it should also have a 2 with an up arrow, indicating that there are 2 commits to push. 
-
-(Note:  if you created the repository locally only and not on the website, you'll see that it says "Publish reposotory".)
-
-Click that button (Push for Macs and Sync for windows).  This will go through the process of uploading everything to the GitHub website.
-
-Now, go back to your GitHub webpage for this repository and reload the page.  You'll see that there are some new files in there, along with your commit messages.
-
-Click on your Jupyter Notebook and inspect the rendered contents.  It does a pretty good job of it!
+* Notice the prompt in the top bar says "Push origin." If you click that, the push will happen.
+* Refresh the website again and your edits will appear.
 
 ## Pulling a change to your local machine from the website
 
-Now we know how to make changes on the website and locally, and them make them match up.  You may be wondering why someone would want to edit on the website.  Usually these are times when it is very convevient to, or you don't have access to nice Markdown previews.  For example, you may have discovered a typo that would be faster to fix in the website than launching your local instance of.  Or you may not be working on your computer with the local copies, so you can make the edits without having to install anything.
+Now we know how to make changes on the website and locally, and them make them match up.  You may be wondering why someone would want to edit on the website.  Usually these are times when it is very convenient to, or you don't have access to nice Markdown previews.  For example, you may have discovered a typo that would be faster to fix in the website than launching your local instance of GitHub Desktop.  Or you may not be working on your computer with the local copies, so you can make the edits without having to install anything.
 
 Go into your readme file on the website and launch the edit mode.  Remember that you do this by clicking on the name of the file and then the pencil icon.
 
@@ -296,19 +230,17 @@ Take 5 minutes to write a silly joke (like a bad python pun) in your readme file
 Example:
 
 ```
-# jupyter-rr-demo-repo
-Demo repo for writing github directions
-
-I will be adding more to this repository as we learn about more features.
+# your repository name
+(your previous information here)
 
 Why did the snake cross the road?  It hoped to put an arterial road between it and Python 2.
 ```
 
-Now go back into your GitHub Desktop and look at the button you just used to push/sync.  Macs might say now "Fetch origin" and Windows likely says (TODO: IDK) sync.  Click that button.
+Now go back into your GitHub Desktop and look at the button you just used to push/sync.  It's likely to say "Fetch origin".  Click that button.
 
-On macs, the button changes to say "Pull origin" and windows it should still say "Sync".  Only now it should have a down arrow and a 1.  This means that there is one commit to pull in (download) to your local version from the website.  
+Now the button changes to say "Pull origin".  It should also have a down arrow and a 1.  This means that there is one commit to pull in (download) to your local version from the website.  
 
-Click it again to pull that change in.  Once done, it should go back to saying "Fetch origin" or "Sync" with no numbers.
+Click it again to pull that change in.  Once done, it should go back to saying "Fetch origin" with no numbers.
 
 Now go into the history tab and you can see the silly joke that you added in.
 
@@ -326,7 +258,7 @@ Go ahead and push this change to GitHub, reload the repository page, and confirm
 
 So we've seen how to revert a commit that we've made, let's look at how you can recover lost work.
 
-Go back into your Jupyter Notebook and use the "cut" button (the scissors icon) to delete all the cells in your notebook.  
+Go back into your file and delete all the contents.  
 
 Now save it! See how there's no undo for this? Oh no!  
 
@@ -344,4 +276,18 @@ Use your file browser to delete (drag them to the trash) all the files inside yo
 
 Activity 5 minutes:  
 
-Delete the entire folder from your computer and recloan the repository to your computer.  Hint: github destop will prompt you to reclone it.
+Delete the entire folder from your computer and reclone the repository to your computer.  Hint: github destop will prompt you to reclone it.
+
+## Issues and Pull Requests: Collaborating with other people
+
+One of the best parts of GitHub is collaboration with other people. However, you don't necessarily want to give people all over the world access to read and write to your stuff. Issues and pull requests help with this. 
+
+* Issues are when someone says "Here's a problem, but I don't have a solution to give you."
+* Pull requests are when someone says "Here's a file with a solution. What do you think of it?"
+
+Activities:
+* Open some issues on your neighbors' repositories.
+* Send me some pull requests for the forks you made of the original repository. 
+
+##Branches: When you're testing things out
+[[Note the Archive branch]]
