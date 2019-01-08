@@ -289,7 +289,7 @@ Activities:
 * Open some issues on your neighbors' repositories.
 * Send me some pull requests for the forks you made of the original repository. 
 
-##Branches: When you're testing things out, or need different versions
+## Branches: When you're testing things out, or need different versions
 
 If we take a look at this lesson itself (the github-training-brain-dumps one), it has footprints of different versions in both its history and its branches. Elizabeth Wickes wrote the first version of this for the iSchool's LIS 452 class, which includes Python. 
 
