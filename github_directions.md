@@ -289,5 +289,24 @@ Activities:
 * Open some issues on your neighbors' repositories.
 * Send me some pull requests for the forks you made of the original repository. 
 
-##Branches: When you're testing things out
-[[Note the Archive branch]]
+##Branches: When you're testing things out, or need different versions
+
+If we take a look at this lesson itself (the github-training-brain-dumps one), it has footprints of different versions in both its history and its branches. Elizabeth Wickes wrote the first version of this for the iSchool's LIS 452 class, which includes Python. 
+
+However, we haven't had Python yet in this workshop, so I modified the lesson to remove Jupyter information, and added the issues, pull requests, and branches segments instead.
+
+I kept Elizabeth's original edition in a branch called Archive, though (mostly for showing branching, because she still has her own original in her own repository). I've also used branches for things like making distinctions between "regular" Software Carpentry versions and "IT Pro-specific" Software Carpentry versions.
+
+Activity:
+Take a look at the differences between the "archive" edition of this instructions file and the "master" version in the web interface. 
+
+Now go into GitHub Desktop and click on Current Branch to see the list of options there. (You'll probably have fewer options than I do, but if you're looking at a clone of someone else's repository, you should at least have upstream/master.)
+
+That archive branch is an example of a branch keeping an easy-access "past tense" snapshot. (I deleted a file from the master that's still available in the archive.)
+
+They're also regularly used for "future tense" editions. The "master" branch is kept good for release, the "published" edition, and new developments are worked on in side branches until they're ready to be released by integrating them into the master. So if I was working on a new edition of this with screen shots, but other people were relying on having the master ready to teach from at any moment, I could have a "working" branch where I was putting that draft together and push the whole thing to the master when it was ready for fully public consumption.
+
+(I say "fully" because if you use a public space on GitHub, people can look at your other branches too. But the "master" is generally regarded as "the officially published version" and the easiest to get hold of.)
+
+Activity, if time permits:
+After trading pull requests with your partners, put your partner's file in a branch with their name on it.
