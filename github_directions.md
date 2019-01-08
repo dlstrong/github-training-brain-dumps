@@ -168,12 +168,12 @@ The interface is now a bit more interesting because you have a repository.  On t
 
 If you can't find this window, you can go up to View and select Show Repositories List.
 
-Right now you may only see the one we just cloned, `jupyter-rr-demo-repo`.  Click on the name to go into that repository's view.
+Right now you may only see the one we just cloned, `swc-forklesson`.  Click on the name to go into that repository's view.
 
-You can always use normal file navigation to find the folder that was just made, but there's a nice selection of shortcuts within the application.  THese are in different spots depending on your OS.
+You can always use normal file navigation to find the folder that was just made, but there's a nice selection of shortcuts within the application.  These are in different spots depending on your OS.
 
-* Mac:  with on the upper menu, click Repository and select Show in Finder.
-* Windows:  click the gear (upper right) and select Show in Explorer.
+* Mac:  click Repository and select Show in Finder.
+* Windows:  click Repository and select Show in Explorer.
 
 This will take you directly to your local folder for this repository.
 
@@ -266,9 +266,9 @@ But not oh no!
 
 Go check things out in GitHub Desktop.  You can see that your file is showing up as changed and all the cells in pink/red are deletions.  You can get rid of these changes.  
 
-Right click on the change in the Changes tab and select "Discard Changes".  You'll want to do this to the checkpoints file as well if that's being tracked.
+Right click on the change in the Changes tab and select "Discard Changes".  
 
-Now go back to your Jupyter Notebook and reload the page.  You'll see that your work is now returned to you.
+Now go back to your file and re-open it.  You'll see that your work is now returned to you.
 
 Activity 5 minutes:
 
