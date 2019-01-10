@@ -38,10 +38,6 @@ Your first step will be to make a [GitHub account](https://github.com/).
 
 Activity:  create account, about 5 minutes
 
-### Optional:  sign up for a GitHub student developer pack
-
-You can submit your request here: [https://education.github.com/pack/join](https://education.github.com/pack/join). There are various discounts, including free private repositories, available for students and academics. 
-
 ## Create a repository
 
 You now have a GitHub account, and your account can have multiple repositories.  You should think of a repository as being a single project.  You can host files and folders in each repository.  Again, there's no hard rule on the boundaries for a repository, and you'll understand them better as you use more features of the platform.
